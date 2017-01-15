@@ -1,0 +1,23 @@
+{
+  "name": "learnyounode-code",
+  "version": "1.0.0",
+  "description": "Sample code for @workshopper/learnyounode Nodejs Tutorial",
+  "main": "index.js",
+  "dependencies": {
+    "through2-map": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intajay/learnyounode-code.git"
+  },
+  "author": "Ajay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intajay/learnyounode-code/issues"
+  },
+  "homepage": "https://github.com/intajay/learnyounode-code#readme"
+}

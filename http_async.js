@@ -1,10 +1,10 @@
-var http = require('http');
+var https = require('https');
 var fs = require('fs');
 
 // first call
-http.get('http://todocors.herokuapp.com', function(response) {
+https.get('https://github.com', function(response) {
 	response.setEncoding('utf8');
-	var writable = fs.createWriteStream(__dirname + '/todocors.html');
+	var writable = fs.createWriteStream(__dirname + '/github.html');
 
 	response.on('data', function(chunk) {
 		console.log(chunk);
@@ -12,9 +12,9 @@ http.get('http://todocors.herokuapp.com', function(response) {
 	});
 
 	// second call
-	http.get('http://esp8266.com', function(response) {
+	https.get('https://nodejs.org/en/', function(response) {
 		response.setEncoding('utf8');
-		var writable = fs.createWriteStream(__dirname + '/esp8266.html');
+		var writable = fs.createWriteStream(__dirname + '/nodejs.html');
 
 		response.on('data', function(chunk) {
 			console.log(chunk);
@@ -22,9 +22,9 @@ http.get('http://todocors.herokuapp.com', function(response) {
 		});
 
 		// third call
-		http.get('http://to2do.herokuapp.com', function(response) {
+		https.get('https://www.npmjs.com', function(response) {
 			response.setEncoding('utf8');
-			var writable = fs.createWriteStream(__dirname + '/to2do.html');
+			var writable = fs.createWriteStream(__dirname + '/npm.html');
 
 			response.on('data', function(chunk) {
 				console.log(chunk);
